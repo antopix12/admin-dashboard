@@ -14,9 +14,58 @@ html {
 }
 
 .header {
-  background-color: lightgray;
+  background-color: white;
   grid-column: 2;
   grid-row: span 1;
+}
+
+.row1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.search-bar {
+  display: flex;
+  flex-direction: row;
+  margin-top: 30px;
+  gap: 10px;
+}
+
+.search-bar svg {
+  padding-left: 50px;
+  width: 30px;
+  height: 30px;
+}
+
+.search-bar .bar {
+  background-color: lightgrey;
+  width: 700px;
+  height: 35px;
+  border-radius: 20px;
+}
+
+.profile {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 30px;
+  margin-right: 100px;
+  gap: 20px;
+  font-weight: bold;
+}
+
+.profile svg {
+  width: 20px;
+  height: 20px;
+}
+
+.picture-container {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: lightgray;
 }
 
 .sidebar {
@@ -36,6 +85,7 @@ html {
   align-items: center;
   gap: 10px;
   padding-right: 90px;
+  margin-top: 20px;
 }
 
 .logo svg {
