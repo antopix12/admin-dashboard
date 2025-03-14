@@ -61,11 +61,54 @@ html {
   height: 20px;
 }
 
-.picture-container {
+.row1 .picture-container {
   width: 50px;
   height: 50px;
   border-radius: 50%;
   background-color: lightgray;
+}
+
+.row2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 50px;
+  justify-content: space-between;
+}
+
+.row2 .picture-container {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: lightgray;
+}
+
+.row2 .welcome {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.row2 .buttons {
+  display: flex;
+  flex-direction: row;
+  margin-right: 70px;
+  gap: 50px;
+}
+
+.row2 .buttons > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: 550;
+  background-color: rgb(25, 146, 212);
+  width: 100px;
+  height: 40px;
+  border-radius: 20px;
 }
 
 .sidebar {
@@ -139,7 +182,7 @@ html {
 }
 
 .dashboard {
-  background-color: bisque;
+  background-color: rgb(236, 236, 236);
   grid-column: 2;
   grid-row: 2/3;
 }
